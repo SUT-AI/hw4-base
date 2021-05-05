@@ -1,10 +1,7 @@
 from typing import Tuple, List, Iterable
 import os
 from enum import Enum
-from collections import namedtuple
 import requests
-from http.cookies import SimpleCookie
-import io
 import numpy as np
 from tqdm import tqdm
 
