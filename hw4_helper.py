@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Tuple, List, Iterable
 import os
 from enum import Enum
 from collections import namedtuple
@@ -8,64 +8,57 @@ import io
 import numpy as np
 from tqdm import tqdm
 
-FileInfo = namedtuple('FileInfo', 'id name')
+
+class FileInfo:
+
+    def __init__(self, name: str, parts: List[str] = ['']):
+        self.name = name
+        self.parts = parts
+
+
 CACHE_ROOT = 'data_cache'
 
+BASE_URL = 'https://sut-ai.github.io/hw4-base/assets/'
+
+
 class DataSpecification(Enum):
-    TrainX = FileInfo('1-0iZwp7vygQqXNLaDmORp_d_EDQVrBXz', os.path.join(CACHE_ROOT, 'x_train.npy'))
-    TrainY = FileInfo('1-4be9NCtS_fhFePJP1T_92iAhwCvwGuQ', os.path.join(CACHE_ROOT, 'y_train.npy'))
-    TestX = FileInfo('1-4A5ZY2jdOFKnupZ2eBB2P4EJI-4im7p', os.path.join(CACHE_ROOT, 'x_test.npy'))
-
-def get_confirm_token(response):
-    for key, value in response.cookies.items():
-        if key.startswith('download_warning'):
-            return value
-    return None
-
-def _get_gdrive_response(file_id: str) -> requests.Response:
-    URL = "https://docs.google.com/uc?export=download"
-    session = requests.Session()
-
-    response = session.get(URL, params={'id': file_id}, stream=True)
-    cookie = SimpleCookie()
-    cookie.load(response.headers['Set-Cookie'])
-
-    session.cookies.update(cookie)
-    response.cookies.update(cookie)
-    token = get_confirm_token(response)
-
-    print('token:', token, response.cookies.keys(), response.headers.keys())
-
-    if token:
-        params = {'id': file_id, 'confirm': token}
-        response = session.get(URL, params=params, stream=True)
-        print('here')
-
-    return response
+    TrainX = FileInfo('x_train.npy', ['.aa', '.ab', '.ac'])
+    TrainY = FileInfo('y_train.npy')
+    TestX = FileInfo('x_test.npy')
 
 
-def _download_file(response: requests.Response, filename: str):
-    print(response)
+def _download_file(responses: Iterable[requests.Response], size: int, filename: str):
     CHUNK_SIZE = 32768
     with open(filename, 'wb') as file:
-        with tqdm(unit='B', unit_scale=True, unit_divisor=1024) as bar:
-            for chunk in response.iter_content(CHUNK_SIZE):
-                if chunk:  # filter out keep-alive new chunks
-                    file.write(chunk)
-                    bar.update(CHUNK_SIZE)
+        with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=size) as bar:
+            for response in responses:
+                for chunk in response.iter_content(CHUNK_SIZE):
+                    if chunk:  # filter out keep-alive new chunks
+                        file.write(chunk)
+                        bar.update(len(chunk))
+
+
+def _get_response(filename: str, part: str) -> requests.Response:
+    return requests.get(f'{BASE_URL}{filename}{part}', stream=True)
+
+
+def _get_size(file_info: FileInfo) -> int:
+    responses = map(lambda part: _get_response(file_info.name, part), file_info.parts)
+    return sum(map(lambda res: int(res.headers['Content-Length']), responses))
 
 
 def _get_data_by_file_info(file_info: FileInfo) -> np.ndarray:
-    response = _get_gdrive_response(file_info.id)
+    responses = map(lambda part: _get_response(file_info.name, part), file_info.parts)
     os.makedirs(CACHE_ROOT, exist_ok=True)
-    _download_file(response, file_info.name)
+    _download_file(responses, _get_size(file_info), os.path.join(CACHE_ROOT, file_info.name))
 
 
 def _get_data(file_info: FileInfo) -> np.ndarray:
-    if not os.path.exists(file_info.name):
+    file_path = os.path.join(CACHE_ROOT, file_info.name)
+    if not os.path.exists(file_path):
         _get_data_by_file_info(file_info)
 
-    return np.load(file_info.name)
+    return np.load(file_path)
 
 
 def get_train_data() -> Tuple[np.ndarray, np.ndarray]:
