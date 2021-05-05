@@ -162,5 +162,6 @@ Thumbs.db
 .prof
 
 data_cache
+prediction.npy
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
