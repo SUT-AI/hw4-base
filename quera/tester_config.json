@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "packages": [
+    {
+      "name": "test",
+      "score": 100,
+      "tests": ["test"]
+    }
+  ]
+}
