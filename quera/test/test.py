@@ -1,6 +1,7 @@
 import os
 from unittest import TestCase
 import numpy as np
+from parameterized import parameterized
 
 TEST = 'y_test.npy'
 PRED = 'prediction.npy'
@@ -21,9 +22,12 @@ class Test(TestCase):
         assert y_test.shape == y_pred.shape,\
             f"Expected prediction shape to be {y_test.shape}, Got {y_pred.shape}"
 
-        accuracy = (y_test == y_pred).astype(float).mean() * 100
+        cls.accuracy = (y_test == y_pred).astype(float).mean() * 100
 
-        print(f'The accuracy of your submission is {accuracy:.2f}')
+        print(f'The accuracy of your submission is {cls.accuracy:.2f}')
 
-        for i in range(100):
-            setattr(cls, f'accuracy_g{i}', lambda self: self.assertGreater(accuracy, i))
+    @parameterized.expand([
+        ['accuracy', i] for i in range(100)
+    ])
+    def test_sequence(self, name, i):
+        self.assertGreater(self.accuracy, i)

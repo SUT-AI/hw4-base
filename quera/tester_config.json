@@ -2,703 +2,703 @@
     "version": 2,
     "packages": [
         {
-            "name": "accuracy_g0",
+            "name": "accuracy > 0",
             "score": 1,
             "tests": [
-                "accuracy_g0"
+                "test_sequence_00_accuracy"
             ]
         },
         {
-            "name": "accuracy_g1",
+            "name": "accuracy > 1",
             "score": 1,
             "tests": [
-                "accuracy_g1"
+                "test_sequence_01_accuracy"
             ]
         },
         {
-            "name": "accuracy_g2",
+            "name": "accuracy > 2",
             "score": 1,
             "tests": [
-                "accuracy_g2"
+                "test_sequence_02_accuracy"
             ]
         },
         {
-            "name": "accuracy_g3",
+            "name": "accuracy > 3",
             "score": 1,
             "tests": [
-                "accuracy_g3"
+                "test_sequence_03_accuracy"
             ]
         },
         {
-            "name": "accuracy_g4",
+            "name": "accuracy > 4",
             "score": 1,
             "tests": [
-                "accuracy_g4"
+                "test_sequence_04_accuracy"
             ]
         },
         {
-            "name": "accuracy_g5",
+            "name": "accuracy > 5",
             "score": 1,
             "tests": [
-                "accuracy_g5"
+                "test_sequence_05_accuracy"
             ]
         },
         {
-            "name": "accuracy_g6",
+            "name": "accuracy > 6",
             "score": 1,
             "tests": [
-                "accuracy_g6"
+                "test_sequence_06_accuracy"
             ]
         },
         {
-            "name": "accuracy_g7",
+            "name": "accuracy > 7",
             "score": 1,
             "tests": [
-                "accuracy_g7"
+                "test_sequence_07_accuracy"
             ]
         },
         {
-            "name": "accuracy_g8",
+            "name": "accuracy > 8",
             "score": 1,
             "tests": [
-                "accuracy_g8"
+                "test_sequence_08_accuracy"
             ]
         },
         {
-            "name": "accuracy_g9",
+            "name": "accuracy > 9",
             "score": 1,
             "tests": [
-                "accuracy_g9"
+                "test_sequence_09_accuracy"
             ]
         },
         {
-            "name": "accuracy_g10",
+            "name": "accuracy > 10",
             "score": 1,
             "tests": [
-                "accuracy_g10"
+                "test_sequence_10_accuracy"
             ]
         },
         {
-            "name": "accuracy_g11",
+            "name": "accuracy > 11",
             "score": 1,
             "tests": [
-                "accuracy_g11"
+                "test_sequence_11_accuracy"
             ]
         },
         {
-            "name": "accuracy_g12",
+            "name": "accuracy > 12",
             "score": 1,
             "tests": [
-                "accuracy_g12"
+                "test_sequence_12_accuracy"
             ]
         },
         {
-            "name": "accuracy_g13",
+            "name": "accuracy > 13",
             "score": 1,
             "tests": [
-                "accuracy_g13"
+                "test_sequence_13_accuracy"
             ]
         },
         {
-            "name": "accuracy_g14",
+            "name": "accuracy > 14",
             "score": 1,
             "tests": [
-                "accuracy_g14"
+                "test_sequence_14_accuracy"
             ]
         },
         {
-            "name": "accuracy_g15",
+            "name": "accuracy > 15",
             "score": 1,
             "tests": [
-                "accuracy_g15"
+                "test_sequence_15_accuracy"
             ]
         },
         {
-            "name": "accuracy_g16",
+            "name": "accuracy > 16",
             "score": 1,
             "tests": [
-                "accuracy_g16"
+                "test_sequence_16_accuracy"
             ]
         },
         {
-            "name": "accuracy_g17",
+            "name": "accuracy > 17",
             "score": 1,
             "tests": [
-                "accuracy_g17"
+                "test_sequence_17_accuracy"
             ]
         },
         {
-            "name": "accuracy_g18",
+            "name": "accuracy > 18",
             "score": 1,
             "tests": [
-                "accuracy_g18"
+                "test_sequence_18_accuracy"
             ]
         },
         {
-            "name": "accuracy_g19",
+            "name": "accuracy > 19",
             "score": 1,
             "tests": [
-                "accuracy_g19"
+                "test_sequence_19_accuracy"
             ]
         },
         {
-            "name": "accuracy_g20",
+            "name": "accuracy > 20",
             "score": 1,
             "tests": [
-                "accuracy_g20"
+                "test_sequence_20_accuracy"
             ]
         },
         {
-            "name": "accuracy_g21",
+            "name": "accuracy > 21",
             "score": 1,
             "tests": [
-                "accuracy_g21"
+                "test_sequence_21_accuracy"
             ]
         },
         {
-            "name": "accuracy_g22",
+            "name": "accuracy > 22",
             "score": 1,
             "tests": [
-                "accuracy_g22"
+                "test_sequence_22_accuracy"
             ]
         },
         {
-            "name": "accuracy_g23",
+            "name": "accuracy > 23",
             "score": 1,
             "tests": [
-                "accuracy_g23"
+                "test_sequence_23_accuracy"
             ]
         },
         {
-            "name": "accuracy_g24",
+            "name": "accuracy > 24",
             "score": 1,
             "tests": [
-                "accuracy_g24"
+                "test_sequence_24_accuracy"
             ]
         },
         {
-            "name": "accuracy_g25",
+            "name": "accuracy > 25",
             "score": 1,
             "tests": [
-                "accuracy_g25"
+                "test_sequence_25_accuracy"
             ]
         },
         {
-            "name": "accuracy_g26",
+            "name": "accuracy > 26",
             "score": 1,
             "tests": [
-                "accuracy_g26"
+                "test_sequence_26_accuracy"
             ]
         },
         {
-            "name": "accuracy_g27",
+            "name": "accuracy > 27",
             "score": 1,
             "tests": [
-                "accuracy_g27"
+                "test_sequence_27_accuracy"
             ]
         },
         {
-            "name": "accuracy_g28",
+            "name": "accuracy > 28",
             "score": 1,
             "tests": [
-                "accuracy_g28"
+                "test_sequence_28_accuracy"
             ]
         },
         {
-            "name": "accuracy_g29",
+            "name": "accuracy > 29",
             "score": 1,
             "tests": [
-                "accuracy_g29"
+                "test_sequence_29_accuracy"
             ]
         },
         {
-            "name": "accuracy_g30",
+            "name": "accuracy > 30",
             "score": 1,
             "tests": [
-                "accuracy_g30"
+                "test_sequence_30_accuracy"
             ]
         },
         {
-            "name": "accuracy_g31",
+            "name": "accuracy > 31",
             "score": 1,
             "tests": [
-                "accuracy_g31"
+                "test_sequence_31_accuracy"
             ]
         },
         {
-            "name": "accuracy_g32",
+            "name": "accuracy > 32",
             "score": 1,
             "tests": [
-                "accuracy_g32"
+                "test_sequence_32_accuracy"
             ]
         },
         {
-            "name": "accuracy_g33",
+            "name": "accuracy > 33",
             "score": 1,
             "tests": [
-                "accuracy_g33"
+                "test_sequence_33_accuracy"
             ]
         },
         {
-            "name": "accuracy_g34",
+            "name": "accuracy > 34",
             "score": 1,
             "tests": [
-                "accuracy_g34"
+                "test_sequence_34_accuracy"
             ]
         },
         {
-            "name": "accuracy_g35",
+            "name": "accuracy > 35",
             "score": 1,
             "tests": [
-                "accuracy_g35"
+                "test_sequence_35_accuracy"
             ]
         },
         {
-            "name": "accuracy_g36",
+            "name": "accuracy > 36",
             "score": 1,
             "tests": [
-                "accuracy_g36"
+                "test_sequence_36_accuracy"
             ]
         },
         {
-            "name": "accuracy_g37",
+            "name": "accuracy > 37",
             "score": 1,
             "tests": [
-                "accuracy_g37"
+                "test_sequence_37_accuracy"
             ]
         },
         {
-            "name": "accuracy_g38",
+            "name": "accuracy > 38",
             "score": 1,
             "tests": [
-                "accuracy_g38"
+                "test_sequence_38_accuracy"
             ]
         },
         {
-            "name": "accuracy_g39",
+            "name": "accuracy > 39",
             "score": 1,
             "tests": [
-                "accuracy_g39"
+                "test_sequence_39_accuracy"
             ]
         },
         {
-            "name": "accuracy_g40",
+            "name": "accuracy > 40",
             "score": 1,
             "tests": [
-                "accuracy_g40"
+                "test_sequence_40_accuracy"
             ]
         },
         {
-            "name": "accuracy_g41",
+            "name": "accuracy > 41",
             "score": 1,
             "tests": [
-                "accuracy_g41"
+                "test_sequence_41_accuracy"
             ]
         },
         {
-            "name": "accuracy_g42",
+            "name": "accuracy > 42",
             "score": 1,
             "tests": [
-                "accuracy_g42"
+                "test_sequence_42_accuracy"
             ]
         },
         {
-            "name": "accuracy_g43",
+            "name": "accuracy > 43",
             "score": 1,
             "tests": [
-                "accuracy_g43"
+                "test_sequence_43_accuracy"
             ]
         },
         {
-            "name": "accuracy_g44",
+            "name": "accuracy > 44",
             "score": 1,
             "tests": [
-                "accuracy_g44"
+                "test_sequence_44_accuracy"
             ]
         },
         {
-            "name": "accuracy_g45",
+            "name": "accuracy > 45",
             "score": 1,
             "tests": [
-                "accuracy_g45"
+                "test_sequence_45_accuracy"
             ]
         },
         {
-            "name": "accuracy_g46",
+            "name": "accuracy > 46",
             "score": 1,
             "tests": [
-                "accuracy_g46"
+                "test_sequence_46_accuracy"
             ]
         },
         {
-            "name": "accuracy_g47",
+            "name": "accuracy > 47",
             "score": 1,
             "tests": [
-                "accuracy_g47"
+                "test_sequence_47_accuracy"
             ]
         },
         {
-            "name": "accuracy_g48",
+            "name": "accuracy > 48",
             "score": 1,
             "tests": [
-                "accuracy_g48"
+                "test_sequence_48_accuracy"
             ]
         },
         {
-            "name": "accuracy_g49",
+            "name": "accuracy > 49",
             "score": 1,
             "tests": [
-                "accuracy_g49"
+                "test_sequence_49_accuracy"
             ]
         },
         {
-            "name": "accuracy_g50",
+            "name": "accuracy > 50",
             "score": 1,
             "tests": [
-                "accuracy_g50"
+                "test_sequence_50_accuracy"
             ]
         },
         {
-            "name": "accuracy_g51",
+            "name": "accuracy > 51",
             "score": 1,
             "tests": [
-                "accuracy_g51"
+                "test_sequence_51_accuracy"
             ]
         },
         {
-            "name": "accuracy_g52",
+            "name": "accuracy > 52",
             "score": 1,
             "tests": [
-                "accuracy_g52"
+                "test_sequence_52_accuracy"
             ]
         },
         {
-            "name": "accuracy_g53",
+            "name": "accuracy > 53",
             "score": 1,
             "tests": [
-                "accuracy_g53"
+                "test_sequence_53_accuracy"
             ]
         },
         {
-            "name": "accuracy_g54",
+            "name": "accuracy > 54",
             "score": 1,
             "tests": [
-                "accuracy_g54"
+                "test_sequence_54_accuracy"
             ]
         },
         {
-            "name": "accuracy_g55",
+            "name": "accuracy > 55",
             "score": 1,
             "tests": [
-                "accuracy_g55"
+                "test_sequence_55_accuracy"
             ]
         },
         {
-            "name": "accuracy_g56",
+            "name": "accuracy > 56",
             "score": 1,
             "tests": [
-                "accuracy_g56"
+                "test_sequence_56_accuracy"
             ]
         },
         {
-            "name": "accuracy_g57",
+            "name": "accuracy > 57",
             "score": 1,
             "tests": [
-                "accuracy_g57"
+                "test_sequence_57_accuracy"
             ]
         },
         {
-            "name": "accuracy_g58",
+            "name": "accuracy > 58",
             "score": 1,
             "tests": [
-                "accuracy_g58"
+                "test_sequence_58_accuracy"
             ]
         },
         {
-            "name": "accuracy_g59",
+            "name": "accuracy > 59",
             "score": 1,
             "tests": [
-                "accuracy_g59"
+                "test_sequence_59_accuracy"
             ]
         },
         {
-            "name": "accuracy_g60",
+            "name": "accuracy > 60",
             "score": 1,
             "tests": [
-                "accuracy_g60"
+                "test_sequence_60_accuracy"
             ]
         },
         {
-            "name": "accuracy_g61",
+            "name": "accuracy > 61",
             "score": 1,
             "tests": [
-                "accuracy_g61"
+                "test_sequence_61_accuracy"
             ]
         },
         {
-            "name": "accuracy_g62",
+            "name": "accuracy > 62",
             "score": 1,
             "tests": [
-                "accuracy_g62"
+                "test_sequence_62_accuracy"
             ]
         },
         {
-            "name": "accuracy_g63",
+            "name": "accuracy > 63",
             "score": 1,
             "tests": [
-                "accuracy_g63"
+                "test_sequence_63_accuracy"
             ]
         },
         {
-            "name": "accuracy_g64",
+            "name": "accuracy > 64",
             "score": 1,
             "tests": [
-                "accuracy_g64"
+                "test_sequence_64_accuracy"
             ]
         },
         {
-            "name": "accuracy_g65",
+            "name": "accuracy > 65",
             "score": 1,
             "tests": [
-                "accuracy_g65"
+                "test_sequence_65_accuracy"
             ]
         },
         {
-            "name": "accuracy_g66",
+            "name": "accuracy > 66",
             "score": 1,
             "tests": [
-                "accuracy_g66"
+                "test_sequence_66_accuracy"
             ]
         },
         {
-            "name": "accuracy_g67",
+            "name": "accuracy > 67",
             "score": 1,
             "tests": [
-                "accuracy_g67"
+                "test_sequence_67_accuracy"
             ]
         },
         {
-            "name": "accuracy_g68",
+            "name": "accuracy > 68",
             "score": 1,
             "tests": [
-                "accuracy_g68"
+                "test_sequence_68_accuracy"
             ]
         },
         {
-            "name": "accuracy_g69",
+            "name": "accuracy > 69",
             "score": 1,
             "tests": [
-                "accuracy_g69"
+                "test_sequence_69_accuracy"
             ]
         },
         {
-            "name": "accuracy_g70",
+            "name": "accuracy > 70",
             "score": 1,
             "tests": [
-                "accuracy_g70"
+                "test_sequence_70_accuracy"
             ]
         },
         {
-            "name": "accuracy_g71",
+            "name": "accuracy > 71",
             "score": 1,
             "tests": [
-                "accuracy_g71"
+                "test_sequence_71_accuracy"
             ]
         },
         {
-            "name": "accuracy_g72",
+            "name": "accuracy > 72",
             "score": 1,
             "tests": [
-                "accuracy_g72"
+                "test_sequence_72_accuracy"
             ]
         },
         {
-            "name": "accuracy_g73",
+            "name": "accuracy > 73",
             "score": 1,
             "tests": [
-                "accuracy_g73"
+                "test_sequence_73_accuracy"
             ]
         },
         {
-            "name": "accuracy_g74",
+            "name": "accuracy > 74",
             "score": 1,
             "tests": [
-                "accuracy_g74"
+                "test_sequence_74_accuracy"
             ]
         },
         {
-            "name": "accuracy_g75",
+            "name": "accuracy > 75",
             "score": 1,
             "tests": [
-                "accuracy_g75"
+                "test_sequence_75_accuracy"
             ]
         },
         {
-            "name": "accuracy_g76",
+            "name": "accuracy > 76",
             "score": 1,
             "tests": [
-                "accuracy_g76"
+                "test_sequence_76_accuracy"
             ]
         },
         {
-            "name": "accuracy_g77",
+            "name": "accuracy > 77",
             "score": 1,
             "tests": [
-                "accuracy_g77"
+                "test_sequence_77_accuracy"
             ]
         },
         {
-            "name": "accuracy_g78",
+            "name": "accuracy > 78",
             "score": 1,
             "tests": [
-                "accuracy_g78"
+                "test_sequence_78_accuracy"
             ]
         },
         {
-            "name": "accuracy_g79",
+            "name": "accuracy > 79",
             "score": 1,
             "tests": [
-                "accuracy_g79"
+                "test_sequence_79_accuracy"
             ]
         },
         {
-            "name": "accuracy_g80",
+            "name": "accuracy > 80",
             "score": 1,
             "tests": [
-                "accuracy_g80"
+                "test_sequence_80_accuracy"
             ]
         },
         {
-            "name": "accuracy_g81",
+            "name": "accuracy > 81",
             "score": 1,
             "tests": [
-                "accuracy_g81"
+                "test_sequence_81_accuracy"
             ]
         },
         {
-            "name": "accuracy_g82",
+            "name": "accuracy > 82",
             "score": 1,
             "tests": [
-                "accuracy_g82"
+                "test_sequence_82_accuracy"
             ]
         },
         {
-            "name": "accuracy_g83",
+            "name": "accuracy > 83",
             "score": 1,
             "tests": [
-                "accuracy_g83"
+                "test_sequence_83_accuracy"
             ]
         },
         {
-            "name": "accuracy_g84",
+            "name": "accuracy > 84",
             "score": 1,
             "tests": [
-                "accuracy_g84"
+                "test_sequence_84_accuracy"
             ]
         },
         {
-            "name": "accuracy_g85",
+            "name": "accuracy > 85",
             "score": 1,
             "tests": [
-                "accuracy_g85"
+                "test_sequence_85_accuracy"
             ]
         },
         {
-            "name": "accuracy_g86",
+            "name": "accuracy > 86",
             "score": 1,
             "tests": [
-                "accuracy_g86"
+                "test_sequence_86_accuracy"
             ]
         },
         {
-            "name": "accuracy_g87",
+            "name": "accuracy > 87",
             "score": 1,
             "tests": [
-                "accuracy_g87"
+                "test_sequence_87_accuracy"
             ]
         },
         {
-            "name": "accuracy_g88",
+            "name": "accuracy > 88",
             "score": 1,
             "tests": [
-                "accuracy_g88"
+                "test_sequence_88_accuracy"
             ]
         },
         {
-            "name": "accuracy_g89",
+            "name": "accuracy > 89",
             "score": 1,
             "tests": [
-                "accuracy_g89"
+                "test_sequence_89_accuracy"
             ]
         },
         {
-            "name": "accuracy_g90",
+            "name": "accuracy > 90",
             "score": 1,
             "tests": [
-                "accuracy_g90"
+                "test_sequence_90_accuracy"
             ]
         },
         {
-            "name": "accuracy_g91",
+            "name": "accuracy > 91",
             "score": 1,
             "tests": [
-                "accuracy_g91"
+                "test_sequence_91_accuracy"
             ]
         },
         {
-            "name": "accuracy_g92",
+            "name": "accuracy > 92",
             "score": 1,
             "tests": [
-                "accuracy_g92"
+                "test_sequence_92_accuracy"
             ]
         },
         {
-            "name": "accuracy_g93",
+            "name": "accuracy > 93",
             "score": 1,
             "tests": [
-                "accuracy_g93"
+                "test_sequence_93_accuracy"
             ]
         },
         {
-            "name": "accuracy_g94",
+            "name": "accuracy > 94",
             "score": 1,
             "tests": [
-                "accuracy_g94"
+                "test_sequence_94_accuracy"
             ]
         },
         {
-            "name": "accuracy_g95",
+            "name": "accuracy > 95",
             "score": 1,
             "tests": [
-                "accuracy_g95"
+                "test_sequence_95_accuracy"
             ]
         },
         {
-            "name": "accuracy_g96",
+            "name": "accuracy > 96",
             "score": 1,
             "tests": [
-                "accuracy_g96"
+                "test_sequence_96_accuracy"
             ]
         },
         {
-            "name": "accuracy_g97",
+            "name": "accuracy > 97",
             "score": 1,
             "tests": [
-                "accuracy_g97"
+                "test_sequence_97_accuracy"
             ]
         },
         {
-            "name": "accuracy_g98",
+            "name": "accuracy > 98",
             "score": 1,
             "tests": [
-                "accuracy_g98"
+                "test_sequence_98_accuracy"
             ]
         },
         {
-            "name": "accuracy_g99",
+            "name": "accuracy > 99",
             "score": 1,
             "tests": [
-                "accuracy_g99"
+                "test_sequence_99_accuracy"
             ]
         }
     ]
