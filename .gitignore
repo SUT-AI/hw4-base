@@ -164,5 +164,6 @@ Thumbs.db
 data_cache
 prediction.npy
 y_test.npy
+solutions
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
