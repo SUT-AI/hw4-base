@@ -26,8 +26,6 @@ class Test(TestCase):
 
         print(f'The accuracy of your submission is {cls.accuracy:.2f}')
 
-    @parameterized.expand([
-        ['accuracy', i] for i in range(100)
-    ])
+    @parameterized.expand([('accuracy', i) for i in range(100)])
     def test_sequence(self, name, i):
         self.assertGreater(self.accuracy, i)
