@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "number_of_tests": 100,
     "packages": [
         {
             "name": "accuracy > 0",
