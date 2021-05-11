@@ -6,13 +6,16 @@ Usage:
 >>> x_test = hw4_helper.get_test_data()
 >>> prediction = np.zeros(100)
 >>> hw4_helper.export_prediction(prediction)
+>>> hw4_helper.test(prediction)
 
 Author:
     Ahmad Salimi - https://github.com/ahmadsalimi
 """
 
+from operator import truth
 from typing import Tuple, List, Iterable
 import os
+import json
 from enum import Enum
 
 import requests
@@ -29,7 +32,8 @@ class _FileInfo:
 
 CACHE_ROOT = 'data_cache'
 
-BASE_URL = 'https://sut-ai.github.io/hw4-base/assets/'
+DATASET_BASE_URL = 'https://sut-ai.github.io/hw4-base/assets/'
+TEST_URL = 'http://sutai.pythonanywhere.com/tester/test/'
 
 
 class _DataSpecification(Enum):
@@ -50,7 +54,7 @@ def _download_file(responses: Iterable[requests.Response], size: int, filename: 
 
 
 def _get_response(filename: str, part: str) -> requests.Response:
-    return requests.get(f'{BASE_URL}{filename}{part}', stream=True)
+    return requests.get(f'{DATASET_BASE_URL}{filename}{part}', stream=True)
 
 
 def _get_size(file_info: _FileInfo) -> int:
@@ -109,4 +113,35 @@ def export_prediction(prediction: np.ndarray):
         f"Expected prediction to be a numpy.ndarray, got {type(prediction)}"
     assert prediction.ndim == 1,\
         f"Expected prediction to be a 1D array, got a {prediction.ndim} dimensional array"
+    y_test = get_test_data()
+    assert y_test.shape[0] == prediction.shape[0],\
+        f"Expected prediction shape to be {(y_test.shape[0],)}, Got {prediction.shape}"
     np.save('prediction', prediction.astype(np.uint8))
+
+
+def test(prediction: np.ndarray):
+    r"""
+    Tests the given prediction array using test API
+
+            Parameters:
+                    prediction (np.ndarray): The prediction array. (one dimensional)
+    """
+    assert isinstance(prediction, np.ndarray),\
+        f"Expected prediction to be a numpy.ndarray, got {type(prediction)}"
+    assert prediction.ndim == 1,\
+        f"Expected prediction to be a 1D array, got a {prediction.ndim} dimensional array"
+    y_test = get_test_data()
+    assert y_test.shape[0] == prediction.shape[0],\
+        f"Expected prediction shape to be {(y_test.shape[0],)}, Got {prediction.shape}"
+
+    res = requests.post(TEST_URL, data=prediction.astype(np.uint8).tobytes())
+
+    if res.status_code == 500:
+        print('Internal server error! Contact Ahmad Salimi :))))')
+        return
+
+    try:
+        message = json.loads(res.content)['message']
+        print(f'Status: {res.status_code} - message: {message}')
+    except:
+        print('Unable to parse the response! Contact Ahmad Salimi :))))')
